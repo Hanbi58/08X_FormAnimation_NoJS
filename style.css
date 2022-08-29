@@ -23,8 +23,15 @@ body {
   user-select: none;
   width: 15rem;
   height: 20rem;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(13.5px);
+  -webkit-backdrop-filter: blur(13.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  color: rgba(255, 255, 255, 0.45);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -33,7 +40,7 @@ body {
   overflow: hidden;
 }
 
-.container:before {
+/* .container:before {
   content: "";
 
   position: absolute;
@@ -41,7 +48,7 @@ body {
   height: 100%;
   box-shadow: inset 0 0 0 3000px rgba(38, 54, 55, 0.1);
   filter: blur(20px);
-}
+} */
 
 .um,
 .pw {
