@@ -14,18 +14,35 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
+  user-select: none;
   width: 15rem;
   height: 20rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.container:before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 3000px rgba(38, 54, 55, 0.1);
+  filter: blur(20px);
+}
+
 .um,
 .pw {
   display: flex;
@@ -33,7 +50,7 @@ body {
 }
 
 h1 {
-  color: lightgray;
+  color: white;
   text-align: center;
 }
 
@@ -60,17 +77,105 @@ span {
   position: relative;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
-.um label:hover span,
-.um input:focus + label span {
+.um label:hover span:nth-of-type(1),
+.um input:focus + label span:nth-of-type(1) {
   transform: translateY(-1.5rem);
   opacity: 0.95;
+  transition-delay: 100ms;
 }
 
-.pw label:hover span,
-.pw input:focus + label span {
+.um label:hover span:nth-of-type(2),
+.um input:focus + label span:nth-of-type(2) {
   transform: translateY(-1.5rem);
   opacity: 0.95;
+  transition-delay: 200ms;
+}
+.um label:hover span:nth-of-type(3),
+.um input:focus + label span:nth-of-type(3) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 300ms;
+}
+.um label:hover span:nth-of-type(4),
+.um input:focus + label span:nth-of-type(4) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 400ms;
+}
+.um label:hover span:nth-of-type(5),
+.um input:focus + label span:nth-of-type(5) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 500ms;
+}
+.um label:hover span:nth-of-type(6),
+.um input:focus + label span:nth-of-type(6) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 600ms;
+}
+.um label:hover span:nth-of-type(7),
+.um input:focus + label span:nth-of-type(7) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 700ms;
+}
+.um label:hover span:nth-of-type(8),
+.um input:focus + label span:nth-of-type(8) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 800ms;
+}
+
+.pw label:hover span:nth-of-type(1),
+.pw input:focus + label span:nth-of-type(1) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 100ms;
+}
+
+.pw label:hover span:nth-of-type(2),
+.pw input:focus + label span:nth-of-type(2) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 200ms;
+}
+.pw label:hover span:nth-of-type(3),
+.pw input:focus + label span:nth-of-type(3) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 300ms;
+}
+.pw label:hover span:nth-of-type(4),
+.pw input:focus + label span:nth-of-type(4) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 400ms;
+}
+.pw label:hover span:nth-of-type(5),
+.pw input:focus + label span:nth-of-type(5) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 500ms;
+}
+.pw label:hover span:nth-of-type(6),
+.pw input:focus + label span:nth-of-type(6) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 600ms;
+}
+.pw label:hover span:nth-of-type(7),
+.pw input:focus + label span:nth-of-type(7) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 700ms;
+}
+.pw label:hover span:nth-of-type(8),
+.pw input:focus + label span:nth-of-type(8) {
+  transform: translateY(-1.5rem);
+  opacity: 0.95;
+  transition-delay: 800ms;
 }
